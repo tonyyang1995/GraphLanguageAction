@@ -1,0 +1,67 @@
+## InfoAlign Configs
+
+# please run a data preparation script to prepare the dataset first
+# # dataset1: chembl2k
+dataset:
+  name: chembl2k
+  path: datasets
+  num_tasks: 41
+  start_column: 4
+  eval_metric: "roc_auc"
+  criterion: "mse"
+
+
+# # dataset2: broad6k
+# dataset:
+#   name: broad6k
+#   path: datasets
+#   num_tasks: 32
+#   start_column: 2
+#   eval_metric: "roc_auc"
+#   criterion: "mse"
+
+# dataset3: biogenadme
+# dataset:
+#   name: biogenadme
+#   path: datasets
+#   num_tasks: 6
+#   start_column: 4
+#   eval_metric: "avg_mae"
+#   criterion: "mae"
+
+# # dataset4: moltoxcast
+# dataset:
+#   name: moltoxcast
+#   path: datasets
+#   num_tasks: 617
+#   start_column: 2
+#   eval_metric: "roc_auc"
+#   criterion: "mse"
+  
+
+trainer:
+  max_epochs: 100
+  batch_size: 128
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  # seed: 42
+  # device: cuda
+  # log_interval: 10
+  # save_interval: 10
+
+model:
+  name: infoalign
+  graph_encoder:
+    name: gnn
+    num_layers: 5
+    emb_dim: 300
+    JK: "last"
+    drop_ratio: 0.5
+    residual: True
+    gnn_name: "gin"
+    norm_layer: "batch_norm"
+    graph_pooling: "max"
+
+  save_path: "checkpoints"
+  load_model: True
+  load_model_path: "infoalign_model_best.pth"
