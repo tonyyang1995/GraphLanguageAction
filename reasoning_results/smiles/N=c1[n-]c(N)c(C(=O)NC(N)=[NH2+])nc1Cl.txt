@@ -1,0 +1,17 @@
+Given the following molecule represented by the SMILES string: N=c1[n-]c(N)c(C(=O)NC(N)=[NH2+])nc1Cl, and the following genes: ABCB1,ABL1,ADRA1D,ADRA2B,ADRB2,CA12,CA2,CA9,CACNA1H,CDK2,CHRM1,CHRM3,CHRM4,CNR1,CYP1A2,CYP2C19,CYP2C9,CYP2D6,CYP3A4,DRD2,DRD3,DRD4,EGFR,ESR1,FLT1,HRH1,HTR1A,HTR2A,HTR2B,HTR2C,HTR6,KCNH2,KDR,LCK,MCL1,OPRK1,PPARG,PTGS1,SIGMAR1,SLC6A2,SLC6A4, describe whether the molecule is related to one or a few of these genes in clear, simple and accurate English. Explain the relationship between the molecule and the related genes in detail. You can break down by explain the patterns of the molecule, followed by the gene features. Format the output as 'Step 1:', 'Step 2:', etc., with each step focusing on a specific aspect of the molecule's structure or properties. Finally, summarize the related gene names in a list. Limit the reasoning to at most 5 steps. You can stop after summarizing the related gene names. Step 1: The molecule is a complex organic compound that includes a nitrogen-containing heterocycle (imidazole) and a quaternary ammonium group (-N+=C-N-C(N)-C(=O)NC(N)=[NH2+]). This structure suggests it might interact with receptors or enzymes that are involved in neurotransmission or metabolism.
+Step 2: The presence of a carboxamide group (-C(=O)N) indicates potential interactions with G protein-coupled receptors (GPCRs), particularly those that have an amine binding site. GPCRs like adrenergic receptors (ADRA1D, ADRA2B, ADRB2) and muscarinic acetylcholine receptors (CHRM1, CHRM3, CHRM4) often bind to molecules containing such functional groups.
+Step 3: The quaternary ammonium group (-[NH2+] in the molecule) can form hydrogen bonds and electrostatic interactions with the binding sites of certain receptors, which are often rich in polar amino acid residues. This could make the molecule relevant to receptors that have such binding sites, such as D2-like dopamine receptors (DRD2, DRD3, DRD4).
+Step 4: The presence of a benzene ring and a carbonyl group (C=O) suggest the molecule may be metabolized by cytochrome P450 enzymes, specifically CYP2D6 and CYP2C9, which are known to metabolize drugs and xenobiotics.
+Step 5: Based on the structure and the identified interactions, the molecule is likely to be related to the following genes: ADRA1D, ADRA2B, ADRB2, CHRM1, CHRM3, CHRM4, DRD2, DRD3, DRD4, CYP2D6, CYP2C9.
+Summary of related gene names:
+- ADRA1D
+- ADRA2B
+- ADRB2
+- CHRM1
+- CHRM3
+- CHRM4
+- DRD2
+- DRD3
+- DRD4
+- CYP2D6
+- CYP2C9

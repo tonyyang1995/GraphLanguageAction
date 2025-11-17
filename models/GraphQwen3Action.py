@@ -9,7 +9,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 from peft import LoraConfig, get_peft_model
 import os
 
-HF_TOKEN=""
+HF_TOKEN= os.environ["HF_API_KEY"]
 # define HF download location
 os.environ["HF_HOME"] = "/media/volume/HuggingFace"
 os.environ["HUGGINGFACE_HUB_CACHE="] = "/media/volume/TonySpaIM/huggingface_cache"
